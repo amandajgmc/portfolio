@@ -2800,7 +2800,7 @@ html.no-csstransitions .home-content__main {
 
 .item-process {
   position: relative;
-  min-height: 24.6rem;
+  /* min-height: 24.6rem; */
   margin-bottom: 3rem;
 }
 
