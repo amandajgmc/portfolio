@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "buildNCommit": "ng build --output-path docs --base-href /portfolio/; git commit -m 'New push'; git push"
+    "build": "ng build --output-path docs --base-href /portfolio/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
