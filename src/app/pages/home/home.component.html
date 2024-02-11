@@ -1,6 +1,7 @@
 <!-- ============ Home ============ -->
 <section id="home" class="s-home page-hero target-section" data-parallax="scroll"
-  data-image-src="/assets/img/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+  data-image-src="/portifolio/assets/img/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000
+  data-position-y=center>
   <div class="grid-overlay">
     <div></div>
   </div>
@@ -48,7 +49,7 @@
   <div class="d-flex flex-wrap mx-0 min-vh-90">
     <div class="col-md text-center d-flex align-items-stretch px-0">
       <div class="services-wrap d-flex align-items-center filter img"
-        style="background-image: url(/assets/img/development.jpg);">
+        style="background-image: url(/portifolio/assets/img/development.jpg);">
         <div class="text">
           <h3 class="font-bold">Apps e Sites</h3>
           <p><a href="home#pricing" class="btn-custom">Ver valores ➞</a></p>
@@ -65,7 +66,7 @@
     </div>
     <div class="col-md text-center d-flex align-items-stretch px-0">
       <div class="services-wrap d-flex align-items-center filter img"
-        style="background-image: url(/assets/img/design.jpg);">
+        style="background-image: url(/portifolio/assets/img/design.jpg);">
         <div class="text inside">
           <h3 class="font-bold">Design de marcas</h3>
           <p><a href="home#pricing" class="btn-custom">Ver valores ➞</a></p>
@@ -358,7 +359,7 @@
     <div class="d-flex flex-wrap no-gutters">
       <div *ngFor="let item of projects" class="col-md-6 col-lg-3">
         <div class="project" (click)="openProject(item.id)">
-          <img [src]="'/assets/img/' + item.images[0]" class="img-fluid" alt="Colorlib Template">
+          <img [src]="'/portifolio/assets/img/' + item.images[0]" class="img-fluid" alt="Colorlib Template">
           <div class="text">
             <span>Stylist</span>
             <h3><a>Beard</a></h3>
