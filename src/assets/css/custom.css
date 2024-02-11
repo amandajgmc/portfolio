@@ -1,0 +1,89 @@
+.min-vh-90 { min-height: 90vh !important; }
+.d-grid { display: grid; }
+.font-bold { font-weight: bold; }
+.rounded-1x { border-radius: 1.25em !important; }
+.justify-content-evenly { justify-content: space-evenly; }
+.no-style { color: inherit; }
+
+
+.card-icon { color: #BF925B; }
+
+div:hover > .card-icon { 
+    color: #A57840 !important; 
+    -webkit-transition: background-color 10ms linear;
+    -ms-transition: background-color 10ms linear;
+    transition: background-color 10ms linear;
+}
+
+.filter {
+    position: relative;
+}
+.filter::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    filter: grayscale(100%);
+}
+.inside {
+    /* This will make it stack on top of the ::before */
+    position: relative;
+}
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 576px) { 
+    .rounded-sm-0 { border-radius: 0 !important; }
+    .card-icon { color: #EEEEEE; }
+    .card-item {
+        background-color: #BF925B !important;
+        color: #EEEEEE !important;
+    }
+    .card-item > * {
+        color: #EEEEEE !important;
+    }
+    
+    .card-item:hover, .card-item:focus {
+        background-color: #A57840 !important;
+        -webkit-transition: background-color 10ms linear;
+        -ms-transition: background-color 10ms linear;
+        transition: background-color 10ms linear;
+        color: #FFFFFF !important;
+    }
+    .card-item:hover > *, .card-item:focus > * {
+        color: #FFFFFF !important;
+        -webkit-transition: color 10ms linear;
+        -ms-transition: color 10ms linear;
+        transition: color 10ms linear;
+    }
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+    .rounded-md-0 { border-radius: 0 !important; }
+    .card-item {
+        background-color: #BF925B !important;
+        color: #EEEEEE !important;
+    }
+    .card-item > * {
+        color: #EEEEEE !important;
+    }
+    
+    .card-item:hover, .card-item:focus {
+        background-color: #A57840 !important;
+        -webkit-transition: background-color 10ms linear;
+        -ms-transition: background-color 10ms linear;
+        transition: background-color 10ms linear;
+        color: #FFFFFF !important;
+    }
+    .card-item:hover > *, .card-item:focus > * {
+        color: #FFFFFF !important;
+        -webkit-transition: color 10ms linear;
+        -ms-transition: color 10ms linear;
+        transition: color 10ms linear;
+    }
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    .rounded-lg-0 { border-radius: 0 !important; }
+}

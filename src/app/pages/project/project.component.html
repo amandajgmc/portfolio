@@ -1,0 +1,11 @@
+<section id="about" class="s-about target-section pt-5">
+  <div class="row section-header widder aos-init aos-animate mx-auto mt-5 pt-5" data-aos="fade-up">
+    <h1 class="display-3 fw-bolder">
+      {{ project.title }}
+    </h1>
+    <p class="mt-5">{{ project.content }}</p>
+  </div>
+  <div id="images" class="row section-header widder mx-auto d-flex">
+    <img *ngFor="let image of project.images" class="col-auto" [src]="image">
+  </div>
+</section>

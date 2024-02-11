@@ -1,0 +1,22 @@
+<!-- ============ preloader ============ -->
+<div id="preloader">
+  <div id="loader" class="dots-jump">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<!-- ============ Header ============ -->
+<header class="s-header d-flex justify-content-between px-5 pt-2">
+
+  <div class="header-logo col">
+    <a class="site-logo col-auto" href="index.html">
+      <img src="/assets/img/logo.svg" alt="Homepage">
+    </a>
+  </div>
+
+  <div *ngIf="!isHomePage" class="col-auto">
+    <a class="smoothscroll subhead" href="index.html" title="back">Voltar</a>
+  </div>
+</header>
