@@ -388,7 +388,7 @@ template {
 }
 
 .display-2 {
-  font-size: 6.5rem;
+  font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -13319,7 +13319,7 @@ textarea.form-control {
 }
 
 .heading-section h2 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 1.1;
   font-family: "Barlow Condensed", sans-serif;

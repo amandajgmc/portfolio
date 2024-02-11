@@ -6,6 +6,6 @@
     <p class="mt-5">{{ project.content }}</p>
   </div>
   <div id="images" class="row section-header widder mx-auto d-flex">
-    <img *ngFor="let image of project.images" class="col-auto" [src]="image">
+    <img *ngFor="let image of project.images" class="col-auto pt-1" [src]="'/portfolio/assets/img/' + image">
   </div>
 </section>
