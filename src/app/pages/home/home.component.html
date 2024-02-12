@@ -11,7 +11,7 @@
       <h1>Maor</h1>
       <h3>Agência especializada em designs que fazem a diferença.</h3>
       <div class="home-content__button">
-        <a href="home#about" class="smoothscroll btn btn-primary btn-large">
+        <a href="home#services" class="smoothscroll btn btn-primary btn-large">
           Nossos projetos
         </a>
         <a href="https://wa.me/5513988670657?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+um+or%C3%A7amento"
@@ -91,7 +91,7 @@
 
         </h1>
         <div class="home-content__button mt-0 flex-start w-100 my-auto">
-          <a href="about" class="smoothscroll btn btn-primary btn-large position-relative start-0 end-0">
+          <a (click)="openAbout()" class="smoothscroll btn btn-primary btn-large position-relative start-0 end-0">
             Mais
           </a>
         </div>
@@ -105,16 +105,16 @@
   </div> <!-- end section-header -->
 
   <!-- <div class="row wide mx-auto" data-aos="fade-up">
-          <div class="col-full">
-              <p class="lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget
-                  malesuada. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse.
-              </p>
-          </div>
-      </div> <!-- end about-desc -->
+      <div class="col-full">
+          <p class="lead">
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget
+              malesuada. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse.
+          </p>
+      </div>
+  </div> -->
 </section> <!-- end s-about -->
 
 <!-- ============ Our Services ============ -->
@@ -126,8 +126,10 @@
         <div class="text-center heading-section" data-aos="fade-up" data-aos-offset="0">
           <span class="subheading">Serviços</span>
           <h2 class="mb-4">Menu de serviços</h2>
-          <p>A Maor é uma agência que pode atender você em seus mais variados projetos.<br>Dá uma olhada
-            nos nossos principais serviços</p>
+          <p>A Maor é uma agência que pode atender você em seus mais variados projetos.
+            <br>
+            Dá uma olhada nos nossos principais serviços
+          </p>
         </div>
       </div>
       <div class="d-flex flex-wrap justify-content-evenly w-100 no-gutters my-4">
@@ -304,7 +306,7 @@
           profissional. Além disso, o GitHub é uma plataforma bem estabelecida, gratuita e amplamente reconhecida na
           comunidade de desenvolvimento e também do design, o que torna mais fácil para os recrutadores e clientes em
           potencial encontrarem e acessarem o portfólio.
-
+          <br><br>
           As peças escolhidas foram bem diversas, pois demonstram não só habilidade técnica, como também a versatilidade
           do meu trabalho.
           É possível ver como cada uma das criações refletem parte do seu criador e também de cada cliente que passou
@@ -399,8 +401,8 @@
 </section>
 
 <!-- ============ portfolio ============ -->
-<section id="services" class="s-about page-hero target-section mb-5 mt-4" data-natural-width=3000
-  data-natural-height=2000 data-position-y=center>
+<section id="services" class="s-about page-hero target-section mt-4" data-natural-width=3000 data-natural-height=2000
+  data-position-y=center>
   <div class="container">
     <div class="d-flex no-gutters justify-content-center mb-5 pb-2">
       <div class="text-center heading-section" data-aos="fade-up" data-aos-offset="0">

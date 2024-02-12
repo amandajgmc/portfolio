@@ -12,6 +12,10 @@ export class HomeComponent {
 
   constructor(private router: Router) {}
 
+  openAbout() {
+    this.router.navigate(['about/']);
+  }
+
   openProject(value: number) {
     this.router.navigate(['project/' + value]);
   }
