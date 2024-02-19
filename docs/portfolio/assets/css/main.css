@@ -2844,6 +2844,10 @@ html.no-csstransitions .home-content__main {
     padding-bottom: 1rem;
   }
 
+  .process {
+    margin-top: 2rem !important;
+  }
+
   .process h4 {
     padding-left: 6rem;
   }
