@@ -11,7 +11,7 @@
       <h1>Maor</h1>
       <h3>Agência especializada em designs que fazem a diferença.</h3>
       <div class="home-content__button">
-        <a href="home#services" class="smoothscroll btn btn-primary btn-large">
+        <a href="home#projects" class="smoothscroll btn btn-primary btn-large">
           Nossos projetos
         </a>
         <a href="https://wa.me/5513988670657?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+um+or%C3%A7amento"
@@ -90,7 +90,7 @@
           Meu nome é Amanda e eu amo Criar!
 
         </h1>
-        <div class="home-content__button mt-0 flex-start w-100 my-auto">
+        <div class="home-content__button mt-0 flex-start w-100 my-auto d-none d-md-block">
           <a (click)="openAbout()" class="smoothscroll btn btn-primary btn-large position-relative start-0 end-0">
             Mais
           </a>
@@ -100,6 +100,11 @@
         <div class="cover_image ms-auto rounded-4"
           style="background-image: url('/portfolio/assets/img/profile1.jpg');height: 100%; aspect-ratio: 0.75;background-repeat: no-repeat;background-size: auto 100%;background-position-x: center;">
         </div>
+      </div>
+      <div class="home-content__button mt-0 flex-start w-100 my-auto d-block d-md-none">
+        <a (click)="openAbout()" class="smoothscroll btn btn-primary btn-large position-relative start-0 end-0">
+          Mais
+        </a>
       </div>
     </div>
   </div> <!-- end section-header -->
@@ -126,7 +131,7 @@
         <div class="text-center heading-section" data-aos="fade-up" data-aos-offset="0">
           <span class="subheading">Serviços</span>
           <h2 class="mb-4">Menu de serviços</h2>
-          <p>A Maor é uma agência que pode atender você em seus mais variados projetos.
+          <p class="px-4 px-md-0">A Maor é uma agência que pode atender você em seus mais variados projetos.
             <br>
             Dá uma olhada nos nossos principais serviços
           </p>
@@ -193,8 +198,7 @@
             </div>
           </a>
         </div>
-        <div class="pe-none col-md-6 col-lg-2 px-2 d-flex card-item rounded-1x rounded-md-0 my-md-0 my-3"
-          data-aos="flip-left" data-aos-delay="1200" data-aos-duration="1000">
+        <div class="pe-none col-md-6 col-lg-2 px-2 d-flex card-item rounded-1x rounded-md-0 my-md-0 my-3">
           <a class="no-style mx-auto">
             <div class="media block-6 services d-block text-center">
               <div class="icon card-icon pb-2">
@@ -300,7 +304,8 @@
         <span class="subheading">Motivo do sistema</span>
         <h2 class="mb-4">Sobre o portfólio</h2>
         <br>
-        <p class="text-justify">A criação de um portfólio utilizando HTML e CSS em um site hospedado no GitHub permite
+        <p class="text-justify px-4 px-md-0">A criação de um portfólio utilizando HTML e CSS em um site hospedado no
+          GitHub permite
           total controle sobre o
           design e a estrutura do portfólio, possibilitando a criação de um layout personalizado que reflete o
           profissional. Além disso, o GitHub é uma plataforma bem estabelecida, gratuita e amplamente reconhecida na
@@ -330,7 +335,7 @@
         <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> -->
       </div>
     </div>
-    <div class="about-process process d-flex justify-content-evenly">
+    <div class="about-process process flex-wrap d-flex justify-content-evenly">
       <div class="col-block col-md-4 item-process">
         <div class="item-process__text">
           <div class="d-flex" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false"
@@ -363,7 +368,7 @@
         </div>
       </div>
     </div>
-    <div class="about-process process d-flex justify-content-evenly">
+    <div class="about-process process flex-wrap d-flex justify-content-evenly">
       <div class="col-block col-md-4 item-process">
         <div class="item-process__text">
           <div class="d-flex" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
@@ -401,7 +406,7 @@
 </section>
 
 <!-- ============ portfolio ============ -->
-<section id="services" class="s-about page-hero target-section mt-4" data-natural-width=3000 data-natural-height=2000
+<section id="projects" class="s-about page-hero target-section mt-4" data-natural-width=3000 data-natural-height=2000
   data-position-y=center>
   <div class="container">
     <div class="d-flex no-gutters justify-content-center mb-5 pb-2">
@@ -419,8 +424,8 @@
           <img [src]="'/portfolio/assets/img/' + (item.mainImage ?? item.images[0])" class="img-fluid"
             alt="Colorlib Template">
           <div class="text">
-            <span>{{ item.title }}</span>
-            <h3>{{ item.category }}</h3>
+            <span class="d-none d-md-block">{{ item.title }}</span>
+            <h3 class="d-none d-md-block">{{ item.category }}</h3>
           </div>
         </div>
       </div>
